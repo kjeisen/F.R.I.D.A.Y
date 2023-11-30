@@ -1,0 +1,17 @@
+color bright-blue
+pcb create d USER 1
+pcb create a SYSTEM 0
+pcb create b USER 3
+pcb create c USER 2
+pcb show-all
+color bright-red
+pcb delete c
+pcb show-all
+color bright-blue
+pcb create c SYSTEM 2
+pcb suspend d
+pcb block d
+pcb show-all
+pcb show d
+pcb priority b 0
+pcb show-all
